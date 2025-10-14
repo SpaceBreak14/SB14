@@ -1,0 +1,15 @@
+- type: entity
+  parent: ClothingShoesBase
+  id: wetSocks
+  name: wet socks
+  description: Standard-issue Nanotrasen white socks that are all wet and squishy... gross.
+  components:
+  - type: Sprite
+    sprite: Clothing/Under/Socks/wetsocks.rsi
+  - type: Clothing
+    sprite: Clothing/Under/Socks/wetsocks.rsi
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepSock
+      params:
+        variation: 0.15

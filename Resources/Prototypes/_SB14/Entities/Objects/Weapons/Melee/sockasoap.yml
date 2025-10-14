@@ -1,0 +1,24 @@
+type: entity
+parent: BaseItem
+id: sockasoap
+name: sock a soap
+description: A prison classic, get this bad boy swinging fast and knock someone out!
+components:
+- type: Sprite
+  sprite: Objects/Weapons/Melee/sockasoap.rsi
+  state: icon
+- type: StaminaDamageOnHit
+  damage: 10
+- type: Item
+  size: Small
+  sprite: Objects/Weapons/Melee/sockasoap.rsi
+- type: Appearance
+- type: MeleeWeapon
+  soundHit:
+    collection: sockasoap
+    params:
+      variation: 5
+      volume: 3
+  damage:
+    types:
+      Blunt: 6
